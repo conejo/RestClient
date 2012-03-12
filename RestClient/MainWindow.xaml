@@ -3,16 +3,39 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="RestClient" Height="563" Width="619" Loaded="Window_Loaded">
     <Grid>
-		<TextBox Height="23" HorizontalAlignment="Left" Margin="70,7,0,0" Name="UrlTextBox" VerticalAlignment="Top" Width="515" />
-		<Label Content="Url:" Height="28" HorizontalAlignment="Left" Margin="12,7,0,0" Name="UrlLabel" VerticalAlignment="Top" />
-		<Button Content="Go!" Height="23" HorizontalAlignment="Left" Margin="46,72,0,0" Name="GoButton" VerticalAlignment="Top" Width="75" Click="GoButton_Click" />
-		<Label Content="Method:" Height="28" HorizontalAlignment="Left" Margin="12,36,0,0" Name="MethodLabel" VerticalAlignment="Top" />
-		<ComboBox Height="23" HorizontalAlignment="Left" Margin="70,36,0,0" Name="HttpMethodBox" VerticalAlignment="Top" Width="120" SelectionChanged="HttpMethodBox_SelectionChanged" IsEditable="True" SelectedIndex="0">
+		<Menu Height="23" HorizontalAlignment="Left" Name="menu1" VerticalAlignment="Top" Width="597" >
+			<MenuItem Header="File">
+				<MenuItem Header="Open"></MenuItem>
+				<MenuItem Header="Save"></MenuItem>
+				<MenuItem Header="Save As"></MenuItem>
+			</MenuItem>
+			<MenuItem Header="Edit">
+				<MenuItem Command="ApplicationCommands.Copy"/>
+				<MenuItem Command="ApplicationCommands.Cut"/>
+				<MenuItem Command="ApplicationCommands.Paste"/>
+			</MenuItem>
+			<MenuItem Header="About"></MenuItem>
+		</Menu>
+			
+		<TextBox Height="23" HorizontalAlignment="Left" Margin="70,53,0,0" Name="UrlTextBox" VerticalAlignment="Top" Width="515" />
+		<Label Content="Url:" Height="28" HorizontalAlignment="Left" Margin="12,53,0,0" Name="UrlLabel" VerticalAlignment="Top" />
+		<Button Content="Go!" Height="23" HorizontalAlignment="Left" Margin="46,118,0,0" Name="GoButton" VerticalAlignment="Top" Width="75" Click="GoButton_Click" />
+		<Label Content="Method:" Height="28" HorizontalAlignment="Left" Margin="12,82,0,0" Name="MethodLabel" VerticalAlignment="Top" />
+		<ComboBox Height="23" HorizontalAlignment="Left" Margin="70,82,0,0" Name="HttpMethodBox" VerticalAlignment="Top" Width="120" SelectionChanged="HttpMethodBox_SelectionChanged" IsEditable="True" SelectedIndex="0">
 			<ComboBoxItem Content="GET" />
 			<ComboBoxItem Content="POST" />
 			<ComboBoxItem Content="PUT" />
 			<ComboBoxItem Content="DELETE" />
 			<ComboBoxItem Content="PATCH" />
 		</ComboBox>
+		<StatusBar Height="23" HorizontalAlignment="Left" Margin="1,501,0,0" Name="statusBar1" VerticalAlignment="Top" Width="596" />
+		<TabControl Height="190" HorizontalAlignment="Left" Margin="12,305,0,0" Name="tabControl1" VerticalAlignment="Top" Width="573">
+			<TabItem Header="Request" Name="Request">
+				<ScrollViewer Height="160" Name="requestViewer" Width="563" BorderBrush="Black" BorderThickness="1" />
+			</TabItem>
+			<TabItem Header="Response" Name="Response">
+				<ScrollViewer Height="160" Name="responseViewer" Width="563" BorderBrush="Black" BorderThickness="1"/>
+			</TabItem>
+		</TabControl>
 	</Grid>
 </Window>
