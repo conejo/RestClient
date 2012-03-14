@@ -1,7 +1,11 @@
 
+RestClient
+==========
+
 RestClient is a Windows Rest Client.
 
 Intended Features:
+------------------
 * retain list of last 20 unique urls
 * save and open constructed http calls including url, http method, and http headers
 * be able to call standard rest services
