@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestClient", "RestClient\Re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rest", "Rest\Rest.csproj", "{DF1CCE62-3FF4-4C97-8E88-D630C94A7853}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestConsole", "RestConsole\RestConsole.csproj", "{F954C538-6AB4-4661-9417-160F9A15950E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,16 @@ Global
 		{DF1CCE62-3FF4-4C97-8E88-D630C94A7853}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{DF1CCE62-3FF4-4C97-8E88-D630C94A7853}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{DF1CCE62-3FF4-4C97-8E88-D630C94A7853}.Release|x86.ActiveCfg = Release|Any CPU
+		{F954C538-6AB4-4661-9417-160F9A15950E}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{F954C538-6AB4-4661-9417-160F9A15950E}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{F954C538-6AB4-4661-9417-160F9A15950E}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{F954C538-6AB4-4661-9417-160F9A15950E}.Debug|x86.ActiveCfg = Debug|x86
+		{F954C538-6AB4-4661-9417-160F9A15950E}.Debug|x86.Build.0 = Debug|x86
+		{F954C538-6AB4-4661-9417-160F9A15950E}.Release|Any CPU.ActiveCfg = Release|x86
+		{F954C538-6AB4-4661-9417-160F9A15950E}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{F954C538-6AB4-4661-9417-160F9A15950E}.Release|Mixed Platforms.Build.0 = Release|x86
+		{F954C538-6AB4-4661-9417-160F9A15950E}.Release|x86.ActiveCfg = Release|x86
+		{F954C538-6AB4-4661-9417-160F9A15950E}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

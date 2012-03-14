@@ -11,6 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Rest;
 
 namespace RestClient
 {
@@ -31,7 +32,10 @@ namespace RestClient
 
 		private void GoButton_Click(object sender, RoutedEventArgs e)
 		{
+			Rest.Rest rest = new Rest.Rest();
+			string x = rest.SendHttpGet(this.UrlTextBox.Text);
 
+			this.responseViewer.Content = x;
 		}
 
 		private void HttpMethodBox_SelectionChanged(object sender, SelectionChangedEventArgs e)

@@ -15,3 +15,5 @@ Intended Features:
 * display http response
 * be able to save http request / response 
 
+Please note this is my first project using XAML & RestClient so things are going to look a little rough until I figure them out. 
+

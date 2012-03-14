@@ -28,13 +28,13 @@
 			<ComboBoxItem Content="DELETE" />
 			<ComboBoxItem Content="PATCH" />
 		</ComboBox>
-		<StatusBar Height="23" HorizontalAlignment="Left" Margin="1,501,0,0" Name="statusBar1" VerticalAlignment="Top" Width="596" />
-		<TabControl Height="190" HorizontalAlignment="Stretch" Margin="12,305,0,0" Name="tabControl1" VerticalAlignment="Top" >
+		<StatusBar Height="23" HorizontalAlignment="Left" Margin="1,501,0,0" Name="statusBar1" VerticalAlignment="Bottom" Width="596" />
+		<TabControl Height="190" HorizontalAlignment="Stretch" Margin="12,305,0,0" Name="tabControl1" VerticalAlignment="Stretch" >
 			<TabItem Header="Request" Name="Request">
-				<ScrollViewer Height="160" Name="requestViewer" HorizontalAlignment="Stretch" BorderBrush="Black" BorderThickness="1" />
+				<ScrollViewer Height="160" Name="requestViewer" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" HorizontalScrollBarVisibility="Auto" BorderBrush="Black" BorderThickness="1" />
 			</TabItem>
 			<TabItem Header="Response" Name="Response">
-				<ScrollViewer Height="160" Name="responseViewer" HorizontalAlignment="Stretch" BorderBrush="Black" BorderThickness="1"/>
+				<ScrollViewer Height="160" Name="responseViewer" HorizontalAlignment="Stretch"  VerticalAlignment="Bottom" HorizontalScrollBarVisibility="Auto" BorderBrush="Black" BorderThickness="1"/>
 			</TabItem>
 		</TabControl>
 		<Grid Height="100" HorizontalAlignment="Left" Margin="761,348,0,0" Name="grid1" VerticalAlignment="Top" Width="200" />
