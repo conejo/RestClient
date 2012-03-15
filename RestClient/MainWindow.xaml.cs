@@ -32,15 +32,30 @@ namespace RestClient
 
 		private void GoButton_Click(object sender, RoutedEventArgs e)
 		{
-			Rest.Rest rest = new Rest.Rest();
-			string x = rest.SendHttpGet(this.UrlTextBox.Text);
+	//		Rest.Rest rest = new Rest.Rest();
+	//		string x = rest.SendHttpGet(this.UrlTextBox.Text);
 
-			this.responseViewer.Content = x;
+
+	//		this.responseViewer.Content = x;
+			this.responseViewer.Content = "Hello World, I am a rest response!";
 		}
 
 		private void HttpMethodBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
 		{
 
+		}
+
+		private void CommandBinding_Executed(object sender, ExecutedRoutedEventArgs e)
+		{
+			ScrollViewer sv = sender as ScrollViewer;
+			string x = sv.Content.ToString();
+			Clipboard.SetText(x, TextDataFormat.Text);
+		}
+
+		private void CommandBinding_CanExecute(object sender, CanExecuteRoutedEventArgs e)
+		{
+			var scrollViewer = sender as ScrollViewer;
+			if (scrollViewer != null) e.CanExecute = scrollViewer.Content != null;
 		}
 	}
 }
