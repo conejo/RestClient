@@ -32,12 +32,12 @@ namespace RestClient
 
 		private void GoButton_Click(object sender, RoutedEventArgs e)
 		{
-	//		Rest.Rest rest = new Rest.Rest();
-	//		string x = rest.SendHttpGet(this.UrlTextBox.Text);
+			Rest.Rest rest = new Rest.Rest();
+			string x = rest.SendHttpGet(this.UrlTextBox.Text);
 
 
-	//		this.responseViewer.Content = x;
-			this.responseViewer.Content = "Hello World, I am a rest response!";
+			this.responseViewer.Content = x;
+	//		this.responseViewer.Content = "Hello World, I am a rest response!";
 		}
 
 		private void HttpMethodBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
